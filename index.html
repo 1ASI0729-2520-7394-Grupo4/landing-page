@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuelTrack - Gestión Inteligente de Combustible</title>
+
+  <!-- Font Awesome (íconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Barra de progreso -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Botón Volver Arriba -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Barra de navegación -->
+  <header class="navbar" id="navbar">
+    <div class="logo-container">
+      <i class="fas fa-gas-pump logo-icon"></i>
+      <span class="logo-text">FuelTrack</span>
+    </div>
+
+    <nav class="navbar-links">
+      <a href="#home" class="navbar-link active" data-i18n="navbar.home">Inicio</a>
+      <a href="#features" class="navbar-link" data-i18n="navbar.features">Características</a>
+      <a href="#about" class="navbar-link" data-i18n="navbar.about">Acerca de</a>
+      <a href="#pricing" class="navbar-link" data-i18n="navbar.pricing">Precios</a>
+      <a href="#contact" class="navbar-link" data-i18n="navbar.contact">Contacto</a>
+
+      <!-- Botones de Login -->
+      <div class="navbar-login-buttons">
+        <a href="" target="_blank" class="navbar-button" data-i18n="navbar.client">Cliente</a>
+        <a href="" target="_blank" class="navbar-button navbar-button-primary" data-i18n="navbar.provider">Proveedor</a>
+      </div>
+
+      <!-- Selector de idioma -->
+      <div class="language-selector">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </nav>
+
+    <!-- Menú móvil -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Scripts -->
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
